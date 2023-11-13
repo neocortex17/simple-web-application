@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Лабораторная работа №1 по веб-программированию">
+    <meta name="author" content="Потапова Вера Сергеевна">
+    <meta name="keywords" content="СППО, Лабораторная работа, Университет ИТМО, Веб-программирование, лабы по вебу">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="picture.png">
+    <title>Лабораторная работа по веб-программированию №1</title>
+</head>
+<body>
+    <header class="shaded animated">
+        <h1>ЛP №1 по веб-программированию, вариант 10207</h1>
+            <div id="textTop">
+                <a href="https://github.com/neocortex17" target="_blank" class="luminous animated"
+                 title="Профиль студента на Github">Потапова Вера Сергеевна, P3210</a>
+            </div>
+    </header>
+<table id="table" class="shaded">
+    <tableHeader><td colspan="5"><h3>Введите все необходимые значения:</h3></td></tableHeader>
+    <tableBody>
+        <tr><td colspan="5"></td></tr>
+        <tr>
+            <td>Введите Y:</td>
+            <td colspan="3"><input required name="Y-input" class="luminous animated" type="text" maxlength="10" placeholder="Значение в промежутке (-5;3)"></td>
+            <td rowspan="6">
+                <svg xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="150" x2="300" y2="150" stroke="#000720"></line>
+                    <line x1="150" y1="0" x2="150" y2="300" stroke="#000720"></line>
+                    <line x1="270" y1="148" x2="270" y2="152" stroke="#000720"></line>
+                    <text x="265" y="140">R</text>
+                    <text x="200" y="140">R/2</text>
+                    <text x="75" y="140">-R/2</text>
+                    <text x="20" y="140">-R</text>
+                    <text x="156" y="35">R</text>
+                    <text x="156" y="95">R/2</text>
+                    <text x="156" y="215">-R/2</text>
+                    <text x="156" y="275">-R</text>
+                    <polygon points="300,150 295,155 295, 145" fill="#000720" stroke="#000720"></polygon>
+                    <polygon points="150,0 145,5 155,5" fill="#000720" stroke="#000720"></polygon>
+                    <rect x="150" y="90" width="120" height="60" fill-opacity="0.4" stroke="navy" fill="blue"></rect>
+                    <polygon points="150,150 90,150 150,270" fill-opacity="0.4" stroke="navy" fill="blue"></polygon>
+                    <path d="M150 150 L 30 150 C 30 80 80 30 150 30 L Z" fill-opacity="0.4" stroke="darkorchid" fill="darkorchid"></path>
+                </svg>
+            </td>
+        </tr>
+        <tr>
+            <td>Выберите X:</td>
+            <td><input name="X-button" class="luminous animated" type="button" value="2"></td>
+            <td><input name="X-button" class="luminous animated" type="button" value="3"></td>
+            <td><input name="X-button" class="luminous animated" type="button" value="4"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input name="X-button" class="luminous animated" type="button" value="-1"></td>
+            <td><input name="X-button" class="luminous animated" type="button" value="0"></td>
+            <td><input name="X-button" class="luminous animated" type="button" value="1"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input name="X-button" class="luminous animated" type="button" value="-4"></td>
+            <td><input name="X-button" class="luminous animated" type="button" value="-3"></td>
+            <td><input name="X-button" class="luminous animated" type="button" value="-2"></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td>Введите R:</td>
+            <td colspan="3"><input required name="R-input" class="luminous animated" type="text" maxlength="10" placeholder="Значение в промежутке (2;5)"></td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+            <td colspan="5">
+                <button id="checkButton">Готово</button>
+                <button id="resetButton">Сброс</button>
+            </td>
+        </tr>
+
+    </tableBody>
+    <tableFooter>
+        <tr>
+            <td colspan="5" id="outputContainer">
+
+            </td>
+        </tr>
+    </tableFooter>
+</table>
+    <script src="validator.js"></script>
+</body>
+</html>
